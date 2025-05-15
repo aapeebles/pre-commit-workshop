@@ -25,7 +25,6 @@ def check_select_star(filename: str) -> bool:
         ]
         print('\n'.join(error_list))
         return any(error_list)
-
     # todo: fix error check to be relevant
     # TODO: consider if I want it to return TRUE because of no errors or sql files, etc
     except FileNotFoundError:

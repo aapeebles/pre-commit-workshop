@@ -3,7 +3,7 @@
 import argparse
 from typing import Sequence
 
-from your_pkg.check_select_star import check_select_star
+from .check_select_star import check_select_star
 
 
 def main(argv: Sequence[str] | None = None) -> int:
