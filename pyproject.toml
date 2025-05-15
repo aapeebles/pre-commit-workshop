@@ -48,4 +48,4 @@ ignore = [
 
 [tool.numpydoc-validation]
 
-ignore = ["EX01", "SA01", "ES01", "SS06"]
+checks = ["all", "EX01", "SA01", "ES01", "SS06"]
