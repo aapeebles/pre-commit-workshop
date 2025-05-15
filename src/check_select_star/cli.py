@@ -19,6 +19,3 @@ def main(argv: Sequence[str] | None = None) -> int:
     results = [check_select_star(filename) for filename in args.filenames]
     return int(any(results))
 
-
-if __name__ == '__main__':
-    main(check_select_star)

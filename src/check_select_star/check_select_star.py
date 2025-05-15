@@ -14,14 +14,15 @@ def check_select_star(filename: str) -> bool:
     #     print(f"{filename} skipped")
     # else:
     content = Path(filename).read_text()
+    print(content)
     try:
         sql_statements = sqlparse.parse(content)
-        statements = sqlparse.split(sql_statements)
+        print(sql_statements)
         item_num = 1
         error_list = [
             f"'Select *' test failed in statement {item_num}. Be better."
-            for snippet in statements
-            if string_to_search in snippet
+            for snippet in sql_statements
+            if string_to_search in str(snippet)
         ]
         print('\n'.join(error_list))
         return any(error_list)

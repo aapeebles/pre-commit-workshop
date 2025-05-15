@@ -24,7 +24,7 @@ optional-dependencies.dev = [
 ]
 
 # TODO: update `your-script-name` and the path
-scripts.check_select_star = "check_select_star.cli:check_select_star"
+scripts.check_select_star = "check_select_star.cli:main"
 
 # optional (if you are making a package)
 [tool.setuptools.packages.find]
