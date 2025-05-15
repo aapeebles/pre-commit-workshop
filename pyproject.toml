@@ -46,6 +46,11 @@ ignore = [
     "E501", # line-too-long
 ]
 
-[tool.numpydoc-validation]
-
-checks = ["all", "EX01", "SA01", "ES01", "SS06"]
+[tool.numpydoc_validation]
+checks = [
+    "all",   # report on all checks, except the below
+    "EX01",
+    "SA01",
+    "ES01",
+    "SS06",
+]
