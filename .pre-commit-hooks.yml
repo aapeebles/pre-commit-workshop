@@ -1,0 +1,6 @@
+- id: check_select_star
+  name: Flag select star in sql
+  description: This hook checks for 'select *' in any sql files
+  entry: check_select_star
+  language: python
+  types: [sql]
